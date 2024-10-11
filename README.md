@@ -35,14 +35,28 @@ Separamos claramente la lógica por paquetes para mantener el entorno mas organi
 > [!IMPORTANT]
 La Aplicación corre en el puerto 8080 y la BD en el 5432!
 
-Para correr la aplicación debe estar definido el server de postgresql, de lo contrario el ide no nos permitirá correrla.
+Para correr la aplicación debe estar definido el server de postgresql y la db, de lo contrario el ide no nos permitirá correrla.
 
 Para administrar la base de datos utilizamos pgAdmin4.
 
-> [!NOTE]
-> Debes tener PostgreSQL instalado para poder crear el server.
-
 Debemos crear el servidor en pgAdmin4 con el nombre BDDocumentIngester.
+
+Para registrar el server debemos seguir los siguientes pasos:
+
+![server1](https://github.com/user-attachments/assets/fc01ac8e-d713-4c21-8c59-cdd52e45ca61)
+![server](https://github.com/user-attachments/assets/3ad810e4-faf9-4262-bed3-eefe57f834ce)
+
+En el campo password pondremos "123" aunque este valor puede ser cambiado desde el application.properties en el proyecto.
+
+Con el server creado, creamos la DB con nombre BDDocumentIngester:
+
+![creardb](https://github.com/user-attachments/assets/11c65c30-c93c-4938-9aaf-d6233f2a9efa)
+
+
+> [!NOTE]
+> Debes tener PostgreSQL instalado para poder conectar el server.
+
+Listo! Ya deberia correr correctamente.
 
 ### Funcionalidades con Postman
 
